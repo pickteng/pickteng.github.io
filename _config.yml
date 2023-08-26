@@ -100,12 +100,11 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-# theme: LiveForCode
-theme: landscape
+theme: LiveForCode
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: 'git'
   repo: https://github.com/pickteng/pickteng.github.io
-  branch: master
+  branch: gh-pages
