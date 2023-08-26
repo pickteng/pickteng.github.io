@@ -175,13 +175,6 @@ MenuList:
     class: ""
     target: "_self"
   -
-    name: "订阅"
-    icon: "icon-rss"
-    href: "/atom.xml"
-    type: ""
-    class: ""
-    target: "_blank"
-  -
     name: "搜索"
     icon: "icon-search-menu"
     href: "javascript:;"
