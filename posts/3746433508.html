@@ -9,7 +9,7 @@
     <meta http-equiv="Cache-Control" content="no-siteapp">
     <title>
         
-            错误页面
+            数组坍塌
         
     </title>
     <link rel="shortcut icon" href="#"/>
@@ -32,15 +32,36 @@
 <meta name="generator" content="Hexo 6.3.0"></head>
 <body>
     <a id="cover"></a>
-    <link type="text/css" rel="stylesheet" href="/css/page.css">
+    <link type="text/css" rel="stylesheet" href="/css/post.css">
 <div id="header" class="header">
     <div class="vertical">
         <div class="inner">
             
-                <h1 class="header-subtitle">错误页面</h1>
+                <h1 class="header-subtitle">数组坍塌</h1>
                 <div class="header-subinfo">
-                    <p class="article-info-text Chinese"></p>
-                    <p class="article-info-text English"></p>                  
+                    <p class="article-info-text">
+                        <span>
+                            <i class="iconfont icon-time"></i> 发表时间：2020-04-04
+                        </span>
+                        
+                            
+                                <span id="/posts/3746433508.html" class="leancloud_visitors" data-flag-title="数组坍塌">
+                                    <i class="iconfont icon-browse"></i> 阅读：<sapn class="leancloud-visitors-count"></span>
+                                </span>
+                            
+                            
+                                <span>
+                                    <i class="iconfont icon-interactive"></i> 评论：<span class="valine-comment-count" data-xid="/posts/3746433508.html"></span>
+                                </span>
+                              
+                        
+                    </p>
+                    
+                    
+                        
+                            <span class="tag-color">数组坍塌</span>
+                        
+                    
                 </div>
             
         </div>
@@ -49,36 +70,72 @@
 </div>
 <div id="container">
     
-        <!-- 独立页面 -->
-        
-            <div id="article">
-                <div class="article-body">
-                    
-                        <div class="error-404">
-    <span class="title-404">PAGE NOT FOUND</span>
-    
-        <span class="content-404">很抱歉，您访问的页面不存在！</span>
-    
-        <span class="content-404">可能是输入地址有误或该地址已变更。</span>
-    
-    <br>
-    <span class="iconfont icon-swimming"></span>
-    <hr>
-    <span class="buttons-404">
-        
-            <a class="button " href="/">
-                <span class="iconfont icon-home"></span> 返回首页
-            </a>
-        
-    </span>
+        <!-- 文章页面 -->
+        <div id="article">
+            <div class="toc"></div>
+            <div class="article-body">
+                <p>当数组删除单元操作时，被删除单元之后的单元，会前移，进而顶替被删除单元，出现在被删除单元的位置上，造成数组长度减少的情况，这样的现象称为数组坍塌。</p>
+<h2 id="正常情况"><a href="#正常情况" class="headerlink" title="正常情况"></a>正常情况</h2><p><img src="/posts/3746433508/20200405185418787.png" alt="数组坍塌"></p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">//</span> <span class="string">正常情况</span></span><br><span class="line"><span class="string">for(var</span> <span class="string">i=0;i&lt;=arr.length-1;i++)&#123;&#125;</span></span><br></pre></td></tr></table></figure>
+<h2 id="数组坍塌情况"><a href="#数组坍塌情况" class="headerlink" title="数组坍塌情况"></a>数组坍塌情况</h2><p><img src="/posts/3746433508/20200405190549836.png" alt="数组坍塌"><br><img src="/posts/3746433508/20200405190605908.png" alt="在这里插入图片描述"><br>例如：我们要删除第三个位置</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">//</span> <span class="string">数组坍塌情况</span></span><br><span class="line"><span class="string">for(var</span> <span class="string">i=0;i&lt;=arr.length-1;i++)&#123;</span></span><br><span class="line">	<span class="string">//</span> <span class="string">当i为2的时候，删除数组单元</span></span><br><span class="line">	<span class="string">if(i==2)&#123;</span></span><br><span class="line">		<span class="string">arr.splice(i,1)</span></span><br><span class="line">	<span class="string">&#125;</span></span><br><span class="line"><span class="string">&#125;</span></span><br></pre></td></tr></table></figure>
+<p>但是因为删除了i为2时候的数组单元，后面原来下标为3的数组单元顶替了下标为2的数组单元，称为了下标为2的数组单元，这样就造成了，图片中小红没有被操作过，正常情况下所有的数组单元都会被操作</p>
+<h2 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h2><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">//</span> <span class="string">数组坍塌解决</span></span><br><span class="line"><span class="string">for(var</span> <span class="string">i=0;i&lt;=arr.length-1;i++)&#123;</span></span><br><span class="line">	<span class="string">//</span> <span class="string">当i为2的时候，删除数组单元</span></span><br><span class="line">	<span class="string">//</span> <span class="string">当删除原先的数组单元后，执行i--操作，这样就能操作图片中的小红的数组单元</span></span><br><span class="line">	<span class="string">if(i==2)&#123;</span></span><br><span class="line">		<span class="string">arr.splice(i,1)</span></span><br><span class="line">		<span class="string">i--</span></span><br><span class="line">	<span class="string">&#125;</span></span><br><span class="line"><span class="string">&#125;</span></span><br></pre></td></tr></table></figure>
+
+
+                
+                <p class="end">__END__</p>
+            </div>
+            <div class="article-footer">
+                <div class="suffix-box">
+    <div class="suffix-box-left">
+        <img src="/image/sidebar/avatar.jpg" alt="Peter Teng">
+    </div>
+    <div class="suffix-box-right">
+        <span class="suffix-box-title">文章作者：</span>Peter Teng
+        <br>
+        <span class="suffix-box-title">文章出处：</span><a href="/posts/3746433508.html" target="_blank">数组坍塌</a>
+        <br>
+        <span class="suffix-box-title">作者签名：</span>简单地活着, 肆意又精彩.
+        <br>
+        <span class="suffix-box-title">关于主题：</span><a href="https://github.com/first19326/Hexo-LiveForCode" target="_blank">Hexo - Live For Code</a>
+        <br>
+        <span class="suffix-box-title">版权声明：</span>文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" title="BY-NC-SA" target="_blank">BY-NC-SA</a> 许可协议，转载请注明出处
+        <br>
+    </div>
+    <div style="clear: both;"></div>
 </div>
+                
+                
+                    <div class="tag">
+                        标签：
+                        
+                            <a href="/tag/%E6%95%B0%E7%BB%84%E5%9D%8D%E5%A1%8C/">数组坍塌</a>
+                        
+                    </div>
+                
+                <div class="article-prev-next">
+                    
+                        <a href="/posts/4207367335.html" class="prev-prefix">« </a> 上一篇：    <a href="/posts/4207367335.html" title="发布于 2020-04-16 04:00">面向对象编程</a>
+                        <br>
                     
                     
+                        <a href="/posts/3383433069.html" class="next-prefix">» </a> 下一篇：    <a href="/posts/3383433069.html" title="发布于 2020-03-20 04:00">冒泡排序和选择排序</a>
                     
                 </div>
-                 
+            </div>
+            
+    <div class="article-comments">
+        
+            <div class="comments-title">
+                评论列表
             </div>
         
+        <div class="comments-content"></div>
+    </div>
+    
+ 
+        </div>
     
 </div>
     <div id="footer">

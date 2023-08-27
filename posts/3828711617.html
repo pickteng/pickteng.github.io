@@ -9,7 +9,7 @@
     <meta http-equiv="Cache-Control" content="no-siteapp">
     <title>
         
-            错误页面
+            flex布局
         
     </title>
     <link rel="shortcut icon" href="#"/>
@@ -32,15 +32,36 @@
 <meta name="generator" content="Hexo 6.3.0"></head>
 <body>
     <a id="cover"></a>
-    <link type="text/css" rel="stylesheet" href="/css/page.css">
+    <link type="text/css" rel="stylesheet" href="/css/post.css">
 <div id="header" class="header">
     <div class="vertical">
         <div class="inner">
             
-                <h1 class="header-subtitle">错误页面</h1>
+                <h1 class="header-subtitle">flex布局</h1>
                 <div class="header-subinfo">
-                    <p class="article-info-text Chinese"></p>
-                    <p class="article-info-text English"></p>                  
+                    <p class="article-info-text">
+                        <span>
+                            <i class="iconfont icon-time"></i> 发表时间：2020-02-27
+                        </span>
+                        
+                            
+                                <span id="/posts/3828711617.html" class="leancloud_visitors" data-flag-title="flex布局">
+                                    <i class="iconfont icon-browse"></i> 阅读：<sapn class="leancloud-visitors-count"></span>
+                                </span>
+                            
+                            
+                                <span>
+                                    <i class="iconfont icon-interactive"></i> 评论：<span class="valine-comment-count" data-xid="/posts/3828711617.html"></span>
+                                </span>
+                              
+                        
+                    </p>
+                    
+                    
+                        
+                            <span class="tag-color">CSS</span>
+                        
+                    
                 </div>
             
         </div>
@@ -49,36 +70,69 @@
 </div>
 <div id="container">
     
-        <!-- 独立页面 -->
-        
-            <div id="article">
-                <div class="article-body">
-                    
-                        <div class="error-404">
-    <span class="title-404">PAGE NOT FOUND</span>
-    
-        <span class="content-404">很抱歉，您访问的页面不存在！</span>
-    
-        <span class="content-404">可能是输入地址有误或该地址已变更。</span>
-    
-    <br>
-    <span class="iconfont icon-swimming"></span>
-    <hr>
-    <span class="buttons-404">
-        
-            <a class="button " href="/">
-                <span class="iconfont icon-home"></span> 返回首页
-            </a>
-        
-    </span>
+        <!-- 文章页面 -->
+        <div id="article">
+            <div class="toc"></div>
+            <div class="article-body">
+                <h3 id="排列方式为行（主轴为水平方向，侧轴为垂直方向）"><a href="#排列方式为行（主轴为水平方向，侧轴为垂直方向）" class="headerlink" title="排列方式为行（主轴为水平方向，侧轴为垂直方向）"></a>排列方式为行（主轴为水平方向，侧轴为垂直方向）</h3><p>1、给父元素添加弹性布局<br>    display: flex;<br>2、给父元素添加  justify-content 属性  （水平居中）<br>      justify-content 属性决定了主轴方向上子项的对齐和分布方式<br>        justify-content: center<br>3、给父元素添加 align-items 属性（垂直居中）<br>align-items : 每一行中的子元素上下对齐方式<br>align-items: center<br>总：父元素{ display: flex; justify-content: center; align-items: center;}</p>
+<h3 id="排列方式为列（主轴为垂直方向，侧轴为水平方向）"><a href="#排列方式为列（主轴为垂直方向，侧轴为水平方向）" class="headerlink" title="排列方式为列（主轴为垂直方向，侧轴为水平方向）"></a>排列方式为列（主轴为垂直方向，侧轴为水平方向）</h3><p>1、给父元素上添加弹性布局<br>    display: flex;<br>2、给父元素添加  justify-content 属性  （垂直居中）<br>      justify-content 属性决定了主轴方向上子项的对齐和分布方式<br>        justify-content: center<br>3、给父元素添加 align-items 属性（水平居中）<br>align-items : 每一行中的子元素上下对齐方式<br>align-items: center<br>总：父元素{ display: flex; justify-content: center; align-items: center;}</p>
+<h5 id="默认情况下，排列方式为行。"><a href="#默认情况下，排列方式为行。" class="headerlink" title="默认情况下，排列方式为行。"></a>默认情况下，排列方式为行。</h5><p>例：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;utf-8&quot;</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">title</span>&gt;</span><span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">style</span> <span class="attr">type</span>=<span class="string">&quot;text/css&quot;</span>&gt;</span><span class="language-css"></span></span><br><span class="line"><span class="language-css">			*&#123;<span class="attribute">margin</span>: <span class="number">0</span>; <span class="attribute">padding</span>: <span class="number">0</span>;&#125;</span></span><br><span class="line"><span class="language-css">			<span class="selector-tag">ul</span>&#123; <span class="attribute">list-style</span>: none;&#125;</span></span><br><span class="line"><span class="language-css">			</span></span><br><span class="line"><span class="language-css">			<span class="selector-tag">ul</span>&#123; <span class="attribute">display</span>: flex; <span class="attribute">justify-content</span>: center; <span class="attribute">align-items</span>: center; <span class="attribute">width</span>: <span class="number">300px</span>; <span class="attribute">height</span>: <span class="number">100px</span>; </span></span><br><span class="line"><span class="language-css">			<span class="attribute">margin</span>: <span class="number">100px</span> auto; <span class="attribute">border</span>: <span class="number">1px</span> solid pink;&#125;</span></span><br><span class="line"><span class="language-css">			<span class="selector-tag">ul</span> <span class="selector-tag">li</span>&#123; <span class="attribute">margin</span>: <span class="number">10px</span>;&#125;</span></span><br><span class="line"><span class="language-css">		</span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">ul</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">li</span>&gt;</span>111<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">li</span>&gt;</span>222<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">li</span>&gt;</span>333<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">li</span>&gt;</span>444<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>效果图：<br><img src="https://img-blog.csdnimg.cn/20200228221306648.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3RjMTE0MzQ4MTk1Ng==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+
+                
+                <p class="end">__END__</p>
+            </div>
+            <div class="article-footer">
+                <div class="suffix-box">
+    <div class="suffix-box-left">
+        <img src="/image/sidebar/avatar.jpg" alt="Peter Teng">
+    </div>
+    <div class="suffix-box-right">
+        <span class="suffix-box-title">文章作者：</span>Peter Teng
+        <br>
+        <span class="suffix-box-title">文章出处：</span><a href="/posts/3828711617.html" target="_blank">flex布局</a>
+        <br>
+        <span class="suffix-box-title">作者签名：</span>简单地活着, 肆意又精彩.
+        <br>
+        <span class="suffix-box-title">关于主题：</span><a href="https://github.com/first19326/Hexo-LiveForCode" target="_blank">Hexo - Live For Code</a>
+        <br>
+        <span class="suffix-box-title">版权声明：</span>文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" title="BY-NC-SA" target="_blank">BY-NC-SA</a> 许可协议，转载请注明出处
+        <br>
+    </div>
+    <div style="clear: both;"></div>
 </div>
+                
+                
+                    <div class="tag">
+                        标签：
+                        
+                            <a href="/tag/CSS/">CSS</a>
+                        
+                    </div>
+                
+                <div class="article-prev-next">
+                    
+                        <a href="/posts/3383433069.html" class="prev-prefix">« </a> 上一篇：    <a href="/posts/3383433069.html" title="发布于 2020-03-20 04:00">冒泡排序和选择排序</a>
+                        <br>
                     
                     
+                        <a href="/posts/1079723623.html" class="next-prefix">» </a> 下一篇：    <a href="/posts/1079723623.html" title="发布于 2020-02-21 04:00">css3立方体</a>
                     
                 </div>
-                 
+            </div>
+            
+    <div class="article-comments">
+        
+            <div class="comments-title">
+                评论列表
             </div>
         
+        <div class="comments-content"></div>
+    </div>
+    
+ 
+        </div>
     
 </div>
     <div id="footer">

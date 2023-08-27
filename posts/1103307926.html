@@ -9,7 +9,7 @@
     <meta http-equiv="Cache-Control" content="no-siteapp">
     <title>
         
-            错误页面
+            element-ui 表单验证
         
     </title>
     <link rel="shortcut icon" href="#"/>
@@ -32,15 +32,36 @@
 <meta name="generator" content="Hexo 6.3.0"></head>
 <body>
     <a id="cover"></a>
-    <link type="text/css" rel="stylesheet" href="/css/page.css">
+    <link type="text/css" rel="stylesheet" href="/css/post.css">
 <div id="header" class="header">
     <div class="vertical">
         <div class="inner">
             
-                <h1 class="header-subtitle">错误页面</h1>
+                <h1 class="header-subtitle">element-ui 表单验证</h1>
                 <div class="header-subinfo">
-                    <p class="article-info-text Chinese"></p>
-                    <p class="article-info-text English"></p>                  
+                    <p class="article-info-text">
+                        <span>
+                            <i class="iconfont icon-time"></i> 发表时间：2020-10-16
+                        </span>
+                        
+                            
+                                <span id="/posts/1103307926.html" class="leancloud_visitors" data-flag-title="element-ui 表单验证">
+                                    <i class="iconfont icon-browse"></i> 阅读：<sapn class="leancloud-visitors-count"></span>
+                                </span>
+                            
+                            
+                                <span>
+                                    <i class="iconfont icon-interactive"></i> 评论：<span class="valine-comment-count" data-xid="/posts/1103307926.html"></span>
+                                </span>
+                              
+                        
+                    </p>
+                    
+                    
+                        
+                            <span class="tag-color">Element UI</span>
+                        
+                    
                 </div>
             
         </div>
@@ -49,36 +70,67 @@
 </div>
 <div id="container">
     
-        <!-- 独立页面 -->
-        
-            <div id="article">
-                <div class="article-body">
-                    
-                        <div class="error-404">
-    <span class="title-404">PAGE NOT FOUND</span>
-    
-        <span class="content-404">很抱歉，您访问的页面不存在！</span>
-    
-        <span class="content-404">可能是输入地址有误或该地址已变更。</span>
-    
-    <br>
-    <span class="iconfont icon-swimming"></span>
-    <hr>
-    <span class="buttons-404">
-        
-            <a class="button " href="/">
-                <span class="iconfont icon-home"></span> 返回首页
-            </a>
-        
-    </span>
+        <!-- 文章页面 -->
+        <div id="article">
+            <div class="toc"></div>
+            <div class="article-body">
+                <h2 id="element-ui-表单验证"><a href="#element-ui-表单验证" class="headerlink" title="element-ui 表单验证"></a>element-ui 表单验证</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="title function_">data</span>(<span class="params"></span>)&#123;</span><br><span class="line">	<span class="keyword">return</span> &#123;</span><br><span class="line">		<span class="keyword">var</span> <span class="title function_">passwordValidate</span> = (<span class="params">rule,value,callback</span>)=&gt;&#123;</span><br><span class="line">			<span class="keyword">let</span> reg = <span class="string">&#x27;正则&#x27;</span></span><br><span class="line">			<span class="keyword">if</span>(!reg.<span class="title function_">test</span>(value))&#123;</span><br><span class="line">				<span class="title function_">callback</span>(<span class="keyword">new</span> <span class="title class_">Error</span>(<span class="string">&#x27;xxxx&#x27;</span>))</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="title function_">callback</span>() <span class="comment">// 必须要加</span></span><br><span class="line">		&#125;</span><br><span class="line">		<span class="attr">formData</span>:&#123;</span><br><span class="line">			<span class="attr">username</span>:<span class="string">&#x27;&#x27;</span>,</span><br><span class="line">			<span class="attr">user</span>:&#123;</span><br><span class="line">				<span class="attr">password</span>:<span class="string">&#x27;&#x27;</span> <span class="comment">// 多层嵌套</span></span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="attr">rule</span>:&#123;</span><br><span class="line">			<span class="attr">username</span>:[</span><br><span class="line">				&#123;<span class="attr">required</span>:<span class="literal">true</span>,<span class="attr">message</span>:<span class="string">&#x27;必填&#x27;</span>,<span class="attr">trigger</span>:<span class="string">&#x27;blur&#x27;</span>&#125;,</span><br><span class="line">				&#123;<span class="attr">min</span>:<span class="number">2</span>,<span class="attr">max</span>:<span class="number">5</span>,<span class="attr">message</span>:<span class="string">&#x27;2-5位&#x27;</span>,<span class="attr">trigger</span>:<span class="string">&#x27;blur&#x27;</span>&#125;</span><br><span class="line">				&#123;<span class="attr">required</span>:<span class="literal">true</span>,<span class="attr">message</span>:<span class="string">&#x27;xxx&#x27;</span>，<span class="attr">pattern</span>:<span class="regexp">/正则/</span>,<span class="attr">trigger</span>:<span class="string">&#x27;blur&#x27;</span>&#125;</span><br><span class="line">			],</span><br><span class="line">			<span class="string">&#x27;user.password&#x27;</span>:[</span><br><span class="line">				&#123;<span class="attr">required</span>:<span class="literal">true</span>,<span class="attr">message</span>:<span class="string">&#x27;必填&#x27;</span>,<span class="attr">trigger</span>:<span class="string">&#x27;blur&#x27;</span>&#125;,</span><br><span class="line">				&#123;<span class="attr">validator</span>:passwordValidate，<span class="attr">trigger</span>:<span class="string">&#x27;blur&#x27;</span>&#125;</span><br><span class="line">			]</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="表单提交验证"><a href="#表单提交验证" class="headerlink" title="表单提交验证"></a>表单提交验证</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="title function_">submitForm</span>(<span class="params"></span>)&#123;</span><br><span class="line">	<span class="variable language_">this</span>.<span class="property">$ref</span>[<span class="string">&#x27;formName&#x27;</span>].<span class="title function_">validate</span>(valid)=&gt;&#123;</span><br><span class="line">		<span class="keyword">if</span>(valid)&#123;</span><br><span class="line">			<span class="comment">// 提交成功时触发</span></span><br><span class="line">		&#125;<span class="keyword">else</span>&#123;</span><br><span class="line">			<span class="comment">// 提交失败时触发</span></span><br><span class="line">			<span class="keyword">return</span> <span class="literal">false</span></span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+                
+                <p class="end">__END__</p>
+            </div>
+            <div class="article-footer">
+                <div class="suffix-box">
+    <div class="suffix-box-left">
+        <img src="/image/sidebar/avatar.jpg" alt="Peter Teng">
+    </div>
+    <div class="suffix-box-right">
+        <span class="suffix-box-title">文章作者：</span>Peter Teng
+        <br>
+        <span class="suffix-box-title">文章出处：</span><a href="/posts/1103307926.html" target="_blank">element-ui 表单验证</a>
+        <br>
+        <span class="suffix-box-title">作者签名：</span>简单地活着, 肆意又精彩.
+        <br>
+        <span class="suffix-box-title">关于主题：</span><a href="https://github.com/first19326/Hexo-LiveForCode" target="_blank">Hexo - Live For Code</a>
+        <br>
+        <span class="suffix-box-title">版权声明：</span>文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" title="BY-NC-SA" target="_blank">BY-NC-SA</a> 许可协议，转载请注明出处
+        <br>
+    </div>
+    <div style="clear: both;"></div>
 </div>
+                
+                
+                    <div class="tag">
+                        标签：
+                        
+                            <a href="/tag/Element-UI/">Element UI</a>
+                        
+                    </div>
+                
+                <div class="article-prev-next">
+                    
+                        <a href="/posts/2736856151.html" class="prev-prefix">« </a> 上一篇：    <a href="/posts/2736856151.html" title="发布于 2021-07-28 04:00">element-ui tooltip手动设置宽度</a>
+                        <br>
                     
                     
+                        <a href="/posts/2126508159.html" class="next-prefix">» </a> 下一篇：    <a href="/posts/2126508159.html" title="发布于 2020-07-02 07:29">db.collection.get()获取不到数据---微信小程序云开发</a>
                     
                 </div>
-                 
+            </div>
+            
+    <div class="article-comments">
+        
+            <div class="comments-title">
+                评论列表
             </div>
         
+        <div class="comments-content"></div>
+    </div>
+    
+ 
+        </div>
     
 </div>
     <div id="footer">

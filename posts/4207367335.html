@@ -9,7 +9,7 @@
     <meta http-equiv="Cache-Control" content="no-siteapp">
     <title>
         
-            错误页面
+            面向对象编程
         
     </title>
     <link rel="shortcut icon" href="#"/>
@@ -32,15 +32,36 @@
 <meta name="generator" content="Hexo 6.3.0"></head>
 <body>
     <a id="cover"></a>
-    <link type="text/css" rel="stylesheet" href="/css/page.css">
+    <link type="text/css" rel="stylesheet" href="/css/post.css">
 <div id="header" class="header">
     <div class="vertical">
         <div class="inner">
             
-                <h1 class="header-subtitle">错误页面</h1>
+                <h1 class="header-subtitle">面向对象编程</h1>
                 <div class="header-subinfo">
-                    <p class="article-info-text Chinese"></p>
-                    <p class="article-info-text English"></p>                  
+                    <p class="article-info-text">
+                        <span>
+                            <i class="iconfont icon-time"></i> 发表时间：2020-04-16
+                        </span>
+                        
+                            
+                                <span id="/posts/4207367335.html" class="leancloud_visitors" data-flag-title="面向对象编程">
+                                    <i class="iconfont icon-browse"></i> 阅读：<sapn class="leancloud-visitors-count"></span>
+                                </span>
+                            
+                            
+                                <span>
+                                    <i class="iconfont icon-interactive"></i> 评论：<span class="valine-comment-count" data-xid="/posts/4207367335.html"></span>
+                                </span>
+                              
+                        
+                    </p>
+                    
+                    
+                        
+                            <span class="tag-color">面向对象编程</span>
+                        
+                    
                 </div>
             
         </div>
@@ -49,36 +70,196 @@
 </div>
 <div id="container">
     
-        <!-- 独立页面 -->
-        
-            <div id="article">
-                <div class="article-body">
-                    
-                        <div class="error-404">
-    <span class="title-404">PAGE NOT FOUND</span>
+        <!-- 文章页面 -->
+        <div id="article">
+            <div class="toc"></div>
+            <div class="article-body">
+                <h1 id="面向对象"><a href="#面向对象" class="headerlink" title="面向对象"></a>面向对象</h1><p>所谓的面向对象，是一种编程思想，代码的书写格式，之前为了简化代码，我们是将程序封装为函数的形式来调用，函数会有一些小问题：</p>
+<pre><code>函数内部定义的局部作用域变量，函数外部无法直接调用
+
+函数调用使用时，会占用大量的系统内存，容易造成数据溢出，数据泄露，容易被黑客攻击
+
+函数一般只是封装一些模块化的功能
+</code></pre>
+<p>复杂程序的封装会封装成其他形式，使用面向对象的方式来封装程序</p>
+<p>面向过程和面向对象编程思想的区别</p>
+<p>举例生活中的实例 : 中午要吃饺子</p>
+<pre><code>   面向过程
+
+    1,和面
+
+    2,和饺子馅
+
+    3,包饺子--擀皮,放馅,包饺子
+
+    4,烧水
+
+    5,水开了煮饺子
+
+    6,捞饺子
+
+    7,吃饺子
+
     
-        <span class="content-404">很抱歉，您访问的页面不存在！</span>
-    
-        <span class="content-404">可能是输入地址有误或该地址已变更。</span>
-    
-    <br>
-    <span class="iconfont icon-swimming"></span>
-    <hr>
-    <span class="buttons-404">
-        
-            <a class="button " href="/">
-                <span class="iconfont icon-home"></span> 返回首页
-            </a>
-        
-    </span>
+
+    面向对象
+
+ 1,找一个饺子馆 --- 封装的面向对象的程序,完成制作饺子的过程,我们只要点就可以了
+
+ 2,点饺子 --- 调用封装的程序
+
+ 3,做好了吃饺子
+
+ 4,结账
+</code></pre>
+<p>总结：</p>
+<pre><code>面向过程：自己独立的一步一步的完成程序的定义和执行
+
+面向对象：有封装好的面向对象的程序
+
+           直接调用执行就可以了
+
+           功能和作用类似于 封装好的函数
+
+           但是 封装的语法和思想与函数不同
+</code></pre>
+<h2 id="面向对象的基本思想"><a href="#面向对象的基本思想" class="headerlink" title="面向对象的基本思想"></a>面向对象的基本思想</h2><p>基本思路就是，创建一个对象，给这个对象添加上属性和属性值，还有函数等方法</p>
+<p>之后通过操作这个对象，来完成需要的效果</p>
+<pre><code>// 先通过函数的方法，创建一个对象
+function createObj()&#123;
+    // 创建对象
+    const obj=&#123;&#125;;
+    // 给对象添加属性和属性值
+    obj.name=&#39;张三&#39;;
+    obj.age=18;
+    obj.sex=&#39;男&#39;;
+    // 给数组添加方法
+    obj.funNameAge=function()&#123;
+        console.log(this.name,this.age);
+    &#125;
+    obj.funNameSex=function()&#123;
+        console.log(this.name,this.sex);
+    &#125;
+    obj.funSexAge=function()&#123;
+        console.log(this.sex,this.age);
+    &#125;
+    obj.funAll=function()&#123;
+        console.log(this.name,this.age,this.sex);
+    &#125;
+    // 返回这个创建好的对象
+    return obj;
+&#125;
+// 调用函数，函数创建对象，并且作为返回值
+// 变量中存储的就是函数创建的对象
+const obj=createObj();
+// 可以通过调用obj中存储的方法，来实现功能
+obj.funAll(); // 张三 18 男
+</code></pre>
+<h2 id="工厂模式"><a href="#工厂模式" class="headerlink" title="工厂模式"></a>工厂模式</h2><p>所谓的工厂模式是一种书写函数的语法形式，语法规范，就向工厂中的流水线一样，按照步骤来执行需要的操作</p>
+<p>步骤1：创建对象</p>
+<p>步骤2：给对象定义属性和属性值</p>
+<p>步骤3：给对象添加方法</p>
+<p>步骤4：定义对象为返回值</p>
+<pre><code>// 标准的工厂模式，会有对应的参数
+function createDumplings(pi,mian,xian,liao)&#123;
+    // 创建包饺子对象
+    const dumplings=&#123;&#125;;
+    // 给包饺子对象添加属性
+    dumplings.pi=pi;
+    dumplings.mian=mian;
+    dumplings.xian=xian;
+    dumplings.liao=liao;
+    // 给包饺子对象添加方法
+    // 和面
+    dumplings.huomian=function()&#123;
+        console.log(this.mian);
+    &#125;
+    // 和饺子馅
+    dumplings.huoxian=function()&#123;
+        console.log(this.xian,this.liao);
+    &#125;
+    // 包饺子
+    dumplings.bao=function()&#123;
+        console.log(this.pi,this.mian,this.xian,this.liao);
+    &#125;
+    // 返回包饺子对象
+    return dumplings;
+&#125;
+// 创建一个执行包饺子功能的对象，并且输入参数
+const dumpling1=createDumplings(&#39;薄皮&#39;,&#39;白面粉&#39;,&#39;猪肉大葱&#39;,&#39;调料1&#39;);
+const dumpling2=createDumplings(&#39;厚皮&#39;,&#39;黑面粉&#39;,&#39;韭菜鸡蛋&#39;,&#39;调料2&#39;);
+console.log(dumpling1); // &#123;pi: &quot;薄皮&quot;, mian: &quot;白面粉&quot;, xian: &quot;猪肉大葱&quot;, liao: &quot;调料1&quot;, huomian: ƒ, …&#125;
+console.log(dumpling2); // &#123;pi: &quot;厚皮&quot;, mian: &quot;黑面粉&quot;, xian: &quot;韭菜鸡蛋&quot;, liao: &quot;调料2&quot;, huomian: ƒ, …&#125;
+
+// 调用封装的方法
+dumpling1.huomian(); // 白面粉
+dumpling1.huoxian(); // 猪肉大葱 调料1
+dumpling2.bao(); // 厚皮 黑面粉 韭菜鸡蛋 调料2
+</code></pre>
+<h2 id="面向对象编程的优点"><a href="#面向对象编程的优点" class="headerlink" title="面向对象编程的优点"></a>面向对象编程的优点</h2><p>高内聚  低耦合</p>
+<p>高内聚：将所有需要的程序，都定义封装在对象内</p>
+<pre><code>    对象中存储所有需要的属性，所有需要的方法
+</code></pre>
+<p>低耦合：尽量减少特殊程序的执行</p>
+<p>面向对象编程的特点</p>
+<pre><code>抽象 --- 通过描述  对象  共有的特点( 属性和属性值 )，来形容一个对象，这个对象不是一个非常具体事例的内容，是一个抽象化的实例
+
+封装 --- 将所有的程序，都定义在一个对象中  
+</code></pre>
+
+                
+                <p class="end">__END__</p>
+            </div>
+            <div class="article-footer">
+                <div class="suffix-box">
+    <div class="suffix-box-left">
+        <img src="/image/sidebar/avatar.jpg" alt="Peter Teng">
+    </div>
+    <div class="suffix-box-right">
+        <span class="suffix-box-title">文章作者：</span>Peter Teng
+        <br>
+        <span class="suffix-box-title">文章出处：</span><a href="/posts/4207367335.html" target="_blank">面向对象编程</a>
+        <br>
+        <span class="suffix-box-title">作者签名：</span>简单地活着, 肆意又精彩.
+        <br>
+        <span class="suffix-box-title">关于主题：</span><a href="https://github.com/first19326/Hexo-LiveForCode" target="_blank">Hexo - Live For Code</a>
+        <br>
+        <span class="suffix-box-title">版权声明：</span>文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" title="BY-NC-SA" target="_blank">BY-NC-SA</a> 许可协议，转载请注明出处
+        <br>
+    </div>
+    <div style="clear: both;"></div>
 </div>
+                
+                
+                    <div class="tag">
+                        标签：
+                        
+                            <a href="/tag/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%BC%96%E7%A8%8B/">面向对象编程</a>
+                        
+                    </div>
+                
+                <div class="article-prev-next">
+                    
+                        <a href="/posts/3855898246.html" class="prev-prefix">« </a> 上一篇：    <a href="/posts/3855898246.html" title="发布于 2020-05-01 04:00">jQuery封装ajax的方法</a>
+                        <br>
                     
                     
+                        <a href="/posts/3746433508.html" class="next-prefix">» </a> 下一篇：    <a href="/posts/3746433508.html" title="发布于 2020-04-04 04:00">数组坍塌</a>
                     
                 </div>
-                 
+            </div>
+            
+    <div class="article-comments">
+        
+            <div class="comments-title">
+                评论列表
             </div>
         
+        <div class="comments-content"></div>
+    </div>
+    
+ 
+        </div>
     
 </div>
     <div id="footer">

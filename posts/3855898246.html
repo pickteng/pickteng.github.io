@@ -9,7 +9,7 @@
     <meta http-equiv="Cache-Control" content="no-siteapp">
     <title>
         
-            错误页面
+            jQuery封装ajax的方法
         
     </title>
     <link rel="shortcut icon" href="#"/>
@@ -32,15 +32,36 @@
 <meta name="generator" content="Hexo 6.3.0"></head>
 <body>
     <a id="cover"></a>
-    <link type="text/css" rel="stylesheet" href="/css/page.css">
+    <link type="text/css" rel="stylesheet" href="/css/post.css">
 <div id="header" class="header">
     <div class="vertical">
         <div class="inner">
             
-                <h1 class="header-subtitle">错误页面</h1>
+                <h1 class="header-subtitle">jQuery封装ajax的方法</h1>
                 <div class="header-subinfo">
-                    <p class="article-info-text Chinese"></p>
-                    <p class="article-info-text English"></p>                  
+                    <p class="article-info-text">
+                        <span>
+                            <i class="iconfont icon-time"></i> 发表时间：2020-05-01
+                        </span>
+                        
+                            
+                                <span id="/posts/3855898246.html" class="leancloud_visitors" data-flag-title="jQuery封装ajax的方法">
+                                    <i class="iconfont icon-browse"></i> 阅读：<sapn class="leancloud-visitors-count"></span>
+                                </span>
+                            
+                            
+                                <span>
+                                    <i class="iconfont icon-interactive"></i> 评论：<span class="valine-comment-count" data-xid="/posts/3855898246.html"></span>
+                                </span>
+                              
+                        
+                    </p>
+                    
+                    
+                        
+                            <span class="tag-color">jQuery</span>
+                        
+                    
                 </div>
             
         </div>
@@ -49,36 +70,70 @@
 </div>
 <div id="container">
     
-        <!-- 独立页面 -->
-        
-            <div id="article">
-                <div class="article-body">
-                    
-                        <div class="error-404">
-    <span class="title-404">PAGE NOT FOUND</span>
-    
-        <span class="content-404">很抱歉，您访问的页面不存在！</span>
-    
-        <span class="content-404">可能是输入地址有误或该地址已变更。</span>
-    
-    <br>
-    <span class="iconfont icon-swimming"></span>
-    <hr>
-    <span class="buttons-404">
-        
-            <a class="button " href="/">
-                <span class="iconfont icon-home"></span> 返回首页
-            </a>
-        
-    </span>
+        <!-- 文章页面 -->
+        <div id="article">
+            <div class="toc"></div>
+            <div class="article-body">
+                <h1 id="1、-get"><a href="#1、-get" class="headerlink" title="1、$.get()"></a>1、$.get()</h1><p>参数有4个，必填参数是url地址，其他参数都是选填参数，可以没有，参数的形式是对象形式。</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">$.get(&#123;</span></span><br><span class="line">    <span class="attr">url :</span> <span class="string">地址(必填),</span></span><br><span class="line">    <span class="attr">data :</span> <span class="string">携带的参数，对象形式,</span></span><br><span class="line">    <span class="attr">dataType :</span> <span class="string">期望的数据类型，如果为json，会将会断返回的json串，自动解析,</span></span><br><span class="line">    <span class="attr">success :</span> <span class="string">function()&#123;</span></span><br><span class="line">       	<span class="string">请求成功时执行的函数</span></span><br><span class="line">    <span class="string">&#125;</span></span><br><span class="line"><span class="string">&#125;)</span></span><br></pre></td></tr></table></figure>
+<h1 id="2、-post"><a href="#2、-post" class="headerlink" title="2、$.post()"></a>2、$.post()</h1><p>参数有4个，必填参数是url地址，其他参数都是选填参数，可以没有，参数的形式是对象形式。</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">$.post(&#123;</span></span><br><span class="line">    <span class="attr">url :</span> <span class="string">地址(必填),</span></span><br><span class="line">    <span class="attr">data :</span> <span class="string">携带的参数，对象形式,</span></span><br><span class="line">    <span class="attr">dataType :</span> <span class="string">期望的数据类型，如果为json，会将会断返回的json串，自动解析,</span></span><br><span class="line">    <span class="attr">success :</span> <span class="string">function()&#123;&#125;</span> <span class="string">请求成功时执行的函数</span></span><br><span class="line"><span class="string">&#125;)</span></span><br></pre></td></tr></table></figure>
+<h1 id="3、-ajax"><a href="#3、-ajax" class="headerlink" title="3、$.ajax()"></a>3、$.ajax()</h1><p>有n个参数，默认请求方式是 get 方式</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">$.ajax(&#123;</span></span><br><span class="line">	<span class="string">常用：</span></span><br><span class="line">    <span class="attr">url :</span> <span class="string">地址,</span></span><br><span class="line">    <span class="attr">type :</span> <span class="string">请求方式，默认值get方式,</span></span><br><span class="line">    <span class="attr">data :</span> &#123;&#125; <span class="string">传参参数，必须是对象形式,</span></span><br><span class="line">    <span class="attr">dataType :</span> <span class="string">json</span> <span class="string">,</span> <span class="string">设定为json，会自动解析反应体中的json串,</span></span><br><span class="line">    <span class="attr">success :</span> <span class="string">function()&#123;&#125;</span> <span class="string">请求成功时执行的函数</span></span><br><span class="line">    </span><br><span class="line">    <span class="string">不常用：</span></span><br><span class="line">    <span class="attr">async :</span> <span class="string">设定是否异步,默认值是true,异步执行ajax请求</span></span><br><span class="line">    <span class="attr">error :</span> <span class="string">function()&#123;&#125;</span>  <span class="string">请求错误时执行的函数</span></span><br><span class="line">                          <span class="string">请求成功时不会执行</span></span><br><span class="line">    <span class="attr">timeout :</span> <span class="string">设定时间,单位</span> <span class="string">毫秒</span></span><br><span class="line">              <span class="string">如果请求时间超过设定的时间,认为是请求失败</span></span><br><span class="line">              <span class="string">必须是异步执行</span></span><br><span class="line">    <span class="attr">cache :</span> <span class="string">设定是否缓存请求结果</span></span><br><span class="line">            <span class="string">默认值是</span> <span class="literal">true</span><span class="string">,缓存请求结果</span></span><br><span class="line">            <span class="string">必须是get方式,这个设定才起作用</span></span><br><span class="line">            <span class="string">post方式不会缓存,设定也没有效果</span></span><br><span class="line">	<span class="attr">context :</span> <span class="string">指定</span> <span class="string">执行函数中</span> <span class="string">this的指向</span></span><br><span class="line"><span class="string">&#125;)</span></span><br></pre></td></tr></table></figure>
+
+                
+                <p class="end">__END__</p>
+            </div>
+            <div class="article-footer">
+                <div class="suffix-box">
+    <div class="suffix-box-left">
+        <img src="/image/sidebar/avatar.jpg" alt="Peter Teng">
+    </div>
+    <div class="suffix-box-right">
+        <span class="suffix-box-title">文章作者：</span>Peter Teng
+        <br>
+        <span class="suffix-box-title">文章出处：</span><a href="/posts/3855898246.html" target="_blank">jQuery封装ajax的方法</a>
+        <br>
+        <span class="suffix-box-title">作者签名：</span>简单地活着, 肆意又精彩.
+        <br>
+        <span class="suffix-box-title">关于主题：</span><a href="https://github.com/first19326/Hexo-LiveForCode" target="_blank">Hexo - Live For Code</a>
+        <br>
+        <span class="suffix-box-title">版权声明：</span>文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" title="BY-NC-SA" target="_blank">BY-NC-SA</a> 许可协议，转载请注明出处
+        <br>
+    </div>
+    <div style="clear: both;"></div>
 </div>
+                
+                
+                    <div class="tag">
+                        标签：
+                        
+                            <a href="/tag/jQuery/">jQuery</a>
+                        
+                    </div>
+                
+                <div class="article-prev-next">
+                    
+                        <a href="/posts/399976084.html" class="prev-prefix">« </a> 上一篇：    <a href="/posts/399976084.html" title="发布于 2020-06-29 04:00">微信小程序页面间事件通信错误Cannot read property emit of undefined</a>
+                        <br>
                     
                     
+                        <a href="/posts/4207367335.html" class="next-prefix">» </a> 下一篇：    <a href="/posts/4207367335.html" title="发布于 2020-04-16 04:00">面向对象编程</a>
                     
                 </div>
-                 
+            </div>
+            
+    <div class="article-comments">
+        
+            <div class="comments-title">
+                评论列表
             </div>
         
+        <div class="comments-content"></div>
+    </div>
+    
+ 
+        </div>
     
 </div>
     <div id="footer">

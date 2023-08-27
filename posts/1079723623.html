@@ -9,7 +9,7 @@
     <meta http-equiv="Cache-Control" content="no-siteapp">
     <title>
         
-            错误页面
+            css3立方体
         
     </title>
     <link rel="shortcut icon" href="#"/>
@@ -32,15 +32,36 @@
 <meta name="generator" content="Hexo 6.3.0"></head>
 <body>
     <a id="cover"></a>
-    <link type="text/css" rel="stylesheet" href="/css/page.css">
+    <link type="text/css" rel="stylesheet" href="/css/post.css">
 <div id="header" class="header">
     <div class="vertical">
         <div class="inner">
             
-                <h1 class="header-subtitle">错误页面</h1>
+                <h1 class="header-subtitle">css3立方体</h1>
                 <div class="header-subinfo">
-                    <p class="article-info-text Chinese"></p>
-                    <p class="article-info-text English"></p>                  
+                    <p class="article-info-text">
+                        <span>
+                            <i class="iconfont icon-time"></i> 发表时间：2020-02-21
+                        </span>
+                        
+                            
+                                <span id="/posts/1079723623.html" class="leancloud_visitors" data-flag-title="css3立方体">
+                                    <i class="iconfont icon-browse"></i> 阅读：<sapn class="leancloud-visitors-count"></span>
+                                </span>
+                            
+                            
+                                <span>
+                                    <i class="iconfont icon-interactive"></i> 评论：<span class="valine-comment-count" data-xid="/posts/1079723623.html"></span>
+                                </span>
+                              
+                        
+                    </p>
+                    
+                    
+                        
+                            <span class="tag-color">CSS</span>
+                        
+                    
                 </div>
             
         </div>
@@ -49,36 +70,230 @@
 </div>
 <div id="container">
     
-        <!-- 独立页面 -->
-        
-            <div id="article">
-                <div class="article-body">
-                    
-                        <div class="error-404">
-    <span class="title-404">PAGE NOT FOUND</span>
-    
-        <span class="content-404">很抱歉，您访问的页面不存在！</span>
-    
-        <span class="content-404">可能是输入地址有误或该地址已变更。</span>
-    
-    <br>
-    <span class="iconfont icon-swimming"></span>
-    <hr>
-    <span class="buttons-404">
-        
-            <a class="button " href="/">
-                <span class="iconfont icon-home"></span> 返回首页
-            </a>
-        
-    </span>
+        <!-- 文章页面 -->
+        <div id="article">
+            <div class="toc"></div>
+            <div class="article-body">
+                <h1 id="用到的属性"><a href="#用到的属性" class="headerlink" title="用到的属性"></a>用到的属性</h1><h2 id="hover"><a href="#hover" class="headerlink" title="hover"></a>hover</h2><p>作用：当鼠标移入时产生定义的hover样式<br>使用方法：例：div标签&nbsp; &nbsp; &nbsp; div:hover{样式}</p>
+<h2 id="transform"><a href="#transform" class="headerlink" title="transform"></a>transform</h2><p>作用：对元素进行移动、旋转、缩放、倾斜</p>
+<table>
+<thead>
+<tr>
+<th>值</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>translate(x,y)</td>
+<td>2D 移动 (单位px)</td>
+</tr>
+<tr>
+<td>translate3d(x,y,z)</td>
+<td>3D 移动</td>
+</tr>
+<tr>
+<td>translateX(x)</td>
+<td>X轴移动</td>
+</tr>
+<tr>
+<td>translateY(y)</td>
+<td>Y轴移动</td>
+</tr>
+<tr>
+<td>scale(x)</td>
+<td>2D 缩放</td>
+</tr>
+<tr>
+<td>scale3d(x,y,z)</td>
+<td>3D 缩放</td>
+</tr>
+<tr>
+<td>scaleX(x)</td>
+<td>沿X轴缩放</td>
+</tr>
+<tr>
+<td>scaleY(y)</td>
+<td>沿Y轴缩放</td>
+</tr>
+<tr>
+<td>scaleZ(z)</td>
+<td>沿Z轴缩放</td>
+</tr>
+<tr>
+<td>rotate(angle)</td>
+<td>2D 旋转 (单位deg)</td>
+</tr>
+<tr>
+<td>rotate3d(x,y,z,angle)</td>
+<td>3D 旋转</td>
+</tr>
+<tr>
+<td>rotateX(angle)</td>
+<td>沿X轴旋转</td>
+</tr>
+<tr>
+<td>rotateY(angle)</td>
+<td>沿Y轴旋转</td>
+</tr>
+<tr>
+<td>rotateZ(angle)</td>
+<td>沿Z轴旋转</td>
+</tr>
+<tr>
+<td>skew(x-angle,y-angle)</td>
+<td>沿着 X 和 Y 轴的 2D 倾斜 (单位deg)</td>
+</tr>
+<tr>
+<td>skewX(angle)</td>
+<td>沿着 X 轴的 2D 倾斜</td>
+</tr>
+<tr>
+<td>skewX(angle)</td>
+<td>沿着 Y 轴的 2D 倾斜</td>
+</tr>
+<tr>
+<td>注：skew没有3D效果</td>
+<td></td>
+</tr>
+</tbody></table>
+<h2 id="transition"><a href="#transition" class="headerlink" title="transition"></a>transition</h2><table>
+<thead>
+<tr>
+<th>值</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>transition-property</td>
+<td>指定CSS属性的name，transition效果</td>
+</tr>
+<tr>
+<td>transition-duration</td>
+<td>transition效果需要指定多少秒或毫秒才能完成</td>
+</tr>
+<tr>
+<td>transition-timing-function</td>
+<td>指定transition效果的速度曲线</td>
+</tr>
+<tr>
+<td>transition-delay</td>
+<td>定义transition效果延迟的时间</td>
+</tr>
+<tr>
+<td>复合写法：transition: property duration timing-function delay;</td>
+<td></td>
+</tr>
+</tbody></table>
+<h2 id="perspective（景深-3D眼镜-）"><a href="#perspective（景深-3D眼镜-）" class="headerlink" title="perspective（景深(3D眼镜)）"></a>perspective（景深(3D眼镜)）</h2><p>语法：perspective: number|none; （单位px）</p>
+<table>
+<thead>
+<tr>
+<th>值</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>number</td>
+<td>元素距离视图的距离</td>
+</tr>
+<tr>
+<td>none</td>
+<td>默认值。与 0 相同。不设置透视</td>
+</tr>
+</tbody></table>
+<p>注：perspective 属性只影响 3D 转换元素</p>
+<h2 id="transform-style"><a href="#transform-style" class="headerlink" title="transform-style"></a>transform-style</h2><p>语法：transform-style: flat|preserve-3d;</p>
+<table>
+<thead>
+<tr>
+<th>值</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>flat</td>
+<td>表示所有子元素在2D平面呈现</td>
+</tr>
+<tr>
+<td>preserve-3d</td>
+<td>表示所有子元素在3D空间中呈现（创建3D空间）</td>
+</tr>
+</tbody></table>
+<h2 id="backface-visibility"><a href="#backface-visibility" class="headerlink" title="backface-visibility"></a>backface-visibility</h2><p>语法：backface-visibility: visible|hidden;</p>
+<table>
+<thead>
+<tr>
+<th>值</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>visible</td>
+<td>背面可见</td>
+</tr>
+<tr>
+<td>hidden</td>
+<td>背面不可见</td>
+</tr>
+</tbody></table>
+<h1 id="代码解析"><a href="#代码解析" class="headerlink" title="代码解析"></a>代码解析</h1><h2 id="html部分"><a href="#html部分" class="headerlink" title="html部分"></a>html部分</h2><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;box&quot;</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">ul</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">li</span>&gt;</span>上<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">li</span>&gt;</span>下<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">li</span>&gt;</span>左<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">li</span>&gt;</span>右<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">li</span>&gt;</span>前<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">li</span>&gt;</span>后<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="css部分"><a href="#css部分" class="headerlink" title="css部分"></a>css部分</h2><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line">&lt;style type=&quot;text/css&quot;&gt;</span><br><span class="line">	<span class="comment">/* 去掉默认样式 */</span></span><br><span class="line">	*&#123;<span class="attribute">margin</span>: <span class="number">0</span>;<span class="attribute">padding</span>: <span class="number">0</span>;&#125;</span><br><span class="line">	<span class="selector-tag">ul</span> <span class="selector-tag">li</span>&#123;<span class="attribute">list-style</span>: none;&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="selector-class">.box</span> &#123;</span><br><span class="line">		<span class="attribute">width</span>: <span class="number">600px</span>; </span><br><span class="line">		<span class="attribute">height</span>: <span class="number">600px</span>; </span><br><span class="line">		<span class="attribute">background</span>: <span class="number">#eee</span>;</span><br><span class="line">		<span class="attribute">margin</span>: <span class="number">0</span> auto;</span><br><span class="line">		<span class="attribute">position</span>: relative;</span><br><span class="line">		<span class="attribute">perspective</span>: <span class="number">800px</span>; <span class="comment">/* 景深 */</span></span><br><span class="line">	<span class="selector-class">.box</span> <span class="selector-tag">ul</span>&#123;</span><br><span class="line">		<span class="attribute">width</span>: <span class="number">300px</span>; </span><br><span class="line">		<span class="attribute">height</span>: <span class="number">300px</span>; </span><br><span class="line">		<span class="attribute">position</span>: absolute;</span><br><span class="line">		<span class="attribute">top</span>: <span class="number">0</span>; </span><br><span class="line">		<span class="attribute">bottom</span>: <span class="number">0</span>; </span><br><span class="line">		<span class="attribute">left</span>: <span class="number">0</span>; </span><br><span class="line">		<span class="attribute">right</span>: <span class="number">0</span>; </span><br><span class="line">		<span class="attribute">margin</span>: auto; </span><br><span class="line">		<span class="attribute">transform-style</span>: preserve-<span class="number">3</span>d; <span class="comment">/* 创建3D空间 */</span></span><br><span class="line">		<span class="attribute">transition</span>: all <span class="number">4s</span>;&#125;</span><br><span class="line">	<span class="selector-class">.box</span> <span class="selector-tag">ul</span><span class="selector-pseudo">:hover</span>&#123;</span><br><span class="line">		<span class="attribute">transform</span>: <span class="built_in">rotateX</span>(<span class="number">360deg</span>) <span class="built_in">rotateY</span>(<span class="number">360deg</span>);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="selector-class">.box</span> <span class="selector-tag">ul</span> <span class="selector-tag">li</span>&#123;</span><br><span class="line">		<span class="attribute">width</span>: <span class="number">300px</span>;</span><br><span class="line">		<span class="attribute">height</span>: <span class="number">300px</span>; </span><br><span class="line">		<span class="attribute">text-align</span>: center; </span><br><span class="line">		<span class="attribute">line-height</span>: <span class="number">300px</span>; </span><br><span class="line">		<span class="attribute">font-size</span>: <span class="number">48px</span>; </span><br><span class="line">		<span class="attribute">position</span>: absolute;</span><br><span class="line">		<span class="attribute">backface-visibility</span>: hidden; <span class="comment">/* 设置背面不可见 */</span> &#125;</span><br><span class="line">	<span class="selector-class">.box</span> <span class="selector-tag">ul</span> <span class="selector-tag">li</span><span class="selector-pseudo">:nth-child</span>(<span class="number">1</span>) &#123;<span class="attribute">background</span>: <span class="built_in">rgba</span>(<span class="number">255</span>,<span class="number">0</span>,<span class="number">0</span>,.<span class="number">5</span>); <span class="attribute">transform</span>: <span class="built_in">translateY</span>(-<span class="number">150px</span>) <span class="built_in">rotateX</span>(<span class="number">90deg</span>);&#125;</span><br><span class="line">	<span class="selector-class">.box</span> <span class="selector-tag">ul</span> <span class="selector-tag">li</span><span class="selector-pseudo">:nth-child</span>(<span class="number">2</span>) &#123;<span class="attribute">background</span>: <span class="built_in">rgba</span>(<span class="number">0</span>,<span class="number">255</span>,<span class="number">0</span>,.<span class="number">5</span>); <span class="attribute">transform</span>: <span class="built_in">translateY</span>(<span class="number">150px</span>) <span class="built_in">rotateX</span>(-<span class="number">90deg</span>);&#125;</span><br><span class="line">	<span class="selector-class">.box</span> <span class="selector-tag">ul</span> <span class="selector-tag">li</span><span class="selector-pseudo">:nth-child</span>(<span class="number">3</span>) &#123;<span class="attribute">background</span>: <span class="built_in">rgba</span>(<span class="number">0</span>,<span class="number">0</span>,<span class="number">255</span>,.<span class="number">5</span>); <span class="attribute">transform</span>: <span class="built_in">translateX</span>(-<span class="number">150px</span>) <span class="built_in">rotateY</span>(-<span class="number">90deg</span>);&#125;</span><br><span class="line">	<span class="selector-class">.box</span> <span class="selector-tag">ul</span> <span class="selector-tag">li</span><span class="selector-pseudo">:nth-child</span>(<span class="number">4</span>) &#123;<span class="attribute">background</span>: <span class="built_in">rgba</span>(<span class="number">255</span>,<span class="number">0</span>,<span class="number">255</span>,.<span class="number">5</span>); <span class="attribute">transform</span>: <span class="built_in">translateX</span>(<span class="number">150px</span>) <span class="built_in">rotateY</span>(<span class="number">90deg</span>);&#125;</span><br><span class="line">	<span class="selector-class">.box</span> <span class="selector-tag">ul</span> <span class="selector-tag">li</span><span class="selector-pseudo">:nth-child</span>(<span class="number">5</span>) &#123;<span class="attribute">background</span>: <span class="built_in">rgba</span>(<span class="number">255</span>,<span class="number">255</span>,<span class="number">0</span>,.<span class="number">5</span>); <span class="attribute">transform</span>: <span class="built_in">translateZ</span>(<span class="number">150px</span>);&#125;</span><br><span class="line">	<span class="selector-class">.box</span> <span class="selector-tag">ul</span> <span class="selector-tag">li</span><span class="selector-pseudo">:nth-child</span>(<span class="number">6</span>) &#123;<span class="attribute">background</span>: <span class="built_in">rgba</span>(<span class="number">0</span>,<span class="number">255</span>,<span class="number">255</span>,.<span class="number">5</span>); <span class="attribute">transform</span>: <span class="built_in">translateZ</span>(-<span class="number">150px</span>) <span class="built_in">rotateY</span>(<span class="number">180deg</span>); &#125;		</span><br><span class="line">&lt;/style&gt;</span><br></pre></td></tr></table></figure>
+
+
+
+
+                
+                <p class="end">__END__</p>
+            </div>
+            <div class="article-footer">
+                <div class="suffix-box">
+    <div class="suffix-box-left">
+        <img src="/image/sidebar/avatar.jpg" alt="Peter Teng">
+    </div>
+    <div class="suffix-box-right">
+        <span class="suffix-box-title">文章作者：</span>Peter Teng
+        <br>
+        <span class="suffix-box-title">文章出处：</span><a href="/posts/1079723623.html" target="_blank">css3立方体</a>
+        <br>
+        <span class="suffix-box-title">作者签名：</span>简单地活着, 肆意又精彩.
+        <br>
+        <span class="suffix-box-title">关于主题：</span><a href="https://github.com/first19326/Hexo-LiveForCode" target="_blank">Hexo - Live For Code</a>
+        <br>
+        <span class="suffix-box-title">版权声明：</span>文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" title="BY-NC-SA" target="_blank">BY-NC-SA</a> 许可协议，转载请注明出处
+        <br>
+    </div>
+    <div style="clear: both;"></div>
 </div>
+                
+                
+                    <div class="tag">
+                        标签：
+                        
+                            <a href="/tag/CSS/">CSS</a>
+                        
+                    </div>
+                
+                <div class="article-prev-next">
                     
+                        <a href="/posts/3828711617.html" class="prev-prefix">« </a> 上一篇：    <a href="/posts/3828711617.html" title="发布于 2020-02-27 04:00">flex布局</a>
+                        <br>
                     
                     
                 </div>
-                 
+            </div>
+            
+    <div class="article-comments">
+        
+            <div class="comments-title">
+                评论列表
             </div>
         
+        <div class="comments-content"></div>
+    </div>
+    
+ 
+        </div>
     
 </div>
     <div id="footer">

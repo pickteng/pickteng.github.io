@@ -9,7 +9,7 @@
     <meta http-equiv="Cache-Control" content="no-siteapp">
     <title>
         
-            错误页面
+            冒泡排序和选择排序
         
     </title>
     <link rel="shortcut icon" href="#"/>
@@ -32,15 +32,36 @@
 <meta name="generator" content="Hexo 6.3.0"></head>
 <body>
     <a id="cover"></a>
-    <link type="text/css" rel="stylesheet" href="/css/page.css">
+    <link type="text/css" rel="stylesheet" href="/css/post.css">
 <div id="header" class="header">
     <div class="vertical">
         <div class="inner">
             
-                <h1 class="header-subtitle">错误页面</h1>
+                <h1 class="header-subtitle">冒泡排序和选择排序</h1>
                 <div class="header-subinfo">
-                    <p class="article-info-text Chinese"></p>
-                    <p class="article-info-text English"></p>                  
+                    <p class="article-info-text">
+                        <span>
+                            <i class="iconfont icon-time"></i> 发表时间：2020-03-20
+                        </span>
+                        
+                            
+                                <span id="/posts/3383433069.html" class="leancloud_visitors" data-flag-title="冒泡排序和选择排序">
+                                    <i class="iconfont icon-browse"></i> 阅读：<sapn class="leancloud-visitors-count"></span>
+                                </span>
+                            
+                            
+                                <span>
+                                    <i class="iconfont icon-interactive"></i> 评论：<span class="valine-comment-count" data-xid="/posts/3383433069.html"></span>
+                                </span>
+                              
+                        
+                    </p>
+                    
+                    
+                        
+                            <span class="tag-color">排序</span>
+                        
+                    
                 </div>
             
         </div>
@@ -49,36 +70,69 @@
 </div>
 <div id="container">
     
-        <!-- 独立页面 -->
-        
-            <div id="article">
-                <div class="article-body">
-                    
-                        <div class="error-404">
-    <span class="title-404">PAGE NOT FOUND</span>
-    
-        <span class="content-404">很抱歉，您访问的页面不存在！</span>
-    
-        <span class="content-404">可能是输入地址有误或该地址已变更。</span>
-    
-    <br>
-    <span class="iconfont icon-swimming"></span>
-    <hr>
-    <span class="buttons-404">
-        
-            <a class="button " href="/">
-                <span class="iconfont icon-home"></span> 返回首页
-            </a>
-        
-    </span>
+        <!-- 文章页面 -->
+        <div id="article">
+            <div class="toc"></div>
+            <div class="article-body">
+                <h3 id="冒泡排序"><a href="#冒泡排序" class="headerlink" title="冒泡排序"></a>冒泡排序</h3><p><img src="/posts/3383433069/2020032113154580.gif" alt="冒泡排序"></p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">var arr=[8,7,55,66,98,123,458,985,211,857,1]</span><br><span class="line">for(var i=0;i&lt;=arr.length-1;i++)&#123;</span><br><span class="line">	for(var j=0;j&lt;=arr.length-1-i;j++)&#123;</span><br><span class="line">		if(arr[j]&gt;arr[j+1])&#123;</span><br><span class="line">			var m=0</span><br><span class="line">			m=arr[j]</span><br><span class="line">			arr[j]=arr[j+1]</span><br><span class="line">			arr[j+1]=m</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;	</span><br><span class="line">&#125;</span><br><span class="line">console.log(arr) //[1, 7, 8, 55, 66, 98, 123, 211, 458, 857, 985]</span><br></pre></td></tr></table></figure>
+<h3 id="选择排序"><a href="#选择排序" class="headerlink" title="选择排序"></a>选择排序</h3><p><img src="/posts/3383433069/20200321131559390.gif" alt="选择排序"></p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">var arr=[8,7,55,66,98,123,458,985,211,857,1]</span><br><span class="line">for(var i=0;i&lt;=arr.length-1;i++)&#123;</span><br><span class="line">	var min=i</span><br><span class="line">	for(var j=i+1;j&lt;=arr.length-1;j++)&#123;</span><br><span class="line">		if(arr[min]&gt;arr[j])&#123;</span><br><span class="line">			min=j</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	if(min!=i)&#123;</span><br><span class="line">		var m=0;</span><br><span class="line">		m=arr[min]</span><br><span class="line">		arr[min]=arr[i]</span><br><span class="line">		arr[i]=m</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line">console.log(arr) //[1, 7, 8, 55, 66, 98, 123, 211, 458, 857, 985]</span><br></pre></td></tr></table></figure>
+
+
+                
+                <p class="end">__END__</p>
+            </div>
+            <div class="article-footer">
+                <div class="suffix-box">
+    <div class="suffix-box-left">
+        <img src="/image/sidebar/avatar.jpg" alt="Peter Teng">
+    </div>
+    <div class="suffix-box-right">
+        <span class="suffix-box-title">文章作者：</span>Peter Teng
+        <br>
+        <span class="suffix-box-title">文章出处：</span><a href="/posts/3383433069.html" target="_blank">冒泡排序和选择排序</a>
+        <br>
+        <span class="suffix-box-title">作者签名：</span>简单地活着, 肆意又精彩.
+        <br>
+        <span class="suffix-box-title">关于主题：</span><a href="https://github.com/first19326/Hexo-LiveForCode" target="_blank">Hexo - Live For Code</a>
+        <br>
+        <span class="suffix-box-title">版权声明：</span>文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" title="BY-NC-SA" target="_blank">BY-NC-SA</a> 许可协议，转载请注明出处
+        <br>
+    </div>
+    <div style="clear: both;"></div>
 </div>
+                
+                
+                    <div class="tag">
+                        标签：
+                        
+                            <a href="/tag/%E6%8E%92%E5%BA%8F/">排序</a>
+                        
+                    </div>
+                
+                <div class="article-prev-next">
+                    
+                        <a href="/posts/3746433508.html" class="prev-prefix">« </a> 上一篇：    <a href="/posts/3746433508.html" title="发布于 2020-04-04 04:00">数组坍塌</a>
+                        <br>
                     
                     
+                        <a href="/posts/3828711617.html" class="next-prefix">» </a> 下一篇：    <a href="/posts/3828711617.html" title="发布于 2020-02-27 04:00">flex布局</a>
                     
                 </div>
-                 
+            </div>
+            
+    <div class="article-comments">
+        
+            <div class="comments-title">
+                评论列表
             </div>
         
+        <div class="comments-content"></div>
+    </div>
+    
+ 
+        </div>
     
 </div>
     <div id="footer">

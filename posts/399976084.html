@@ -9,7 +9,7 @@
     <meta http-equiv="Cache-Control" content="no-siteapp">
     <title>
         
-            错误页面
+            微信小程序页面间事件通信错误Cannot read property emit of undefined
         
     </title>
     <link rel="shortcut icon" href="#"/>
@@ -32,15 +32,36 @@
 <meta name="generator" content="Hexo 6.3.0"></head>
 <body>
     <a id="cover"></a>
-    <link type="text/css" rel="stylesheet" href="/css/page.css">
+    <link type="text/css" rel="stylesheet" href="/css/post.css">
 <div id="header" class="header">
     <div class="vertical">
         <div class="inner">
             
-                <h1 class="header-subtitle">错误页面</h1>
+                <h1 class="header-subtitle">微信小程序页面间事件通信错误Cannot read property emit of undefined</h1>
                 <div class="header-subinfo">
-                    <p class="article-info-text Chinese"></p>
-                    <p class="article-info-text English"></p>                  
+                    <p class="article-info-text">
+                        <span>
+                            <i class="iconfont icon-time"></i> 发表时间：2020-06-29
+                        </span>
+                        
+                            
+                                <span id="/posts/399976084.html" class="leancloud_visitors" data-flag-title="微信小程序页面间事件通信错误Cannot read property emit of undefined">
+                                    <i class="iconfont icon-browse"></i> 阅读：<sapn class="leancloud-visitors-count"></span>
+                                </span>
+                            
+                            
+                                <span>
+                                    <i class="iconfont icon-interactive"></i> 评论：<span class="valine-comment-count" data-xid="/posts/399976084.html"></span>
+                                </span>
+                              
+                        
+                    </p>
+                    
+                    
+                        
+                            <span class="tag-color">微信小程序</span>
+                        
+                    
                 </div>
             
         </div>
@@ -49,36 +70,66 @@
 </div>
 <div id="container">
     
-        <!-- 独立页面 -->
-        
-            <div id="article">
-                <div class="article-body">
-                    
-                        <div class="error-404">
-    <span class="title-404">PAGE NOT FOUND</span>
-    
-        <span class="content-404">很抱歉，您访问的页面不存在！</span>
-    
-        <span class="content-404">可能是输入地址有误或该地址已变更。</span>
-    
-    <br>
-    <span class="iconfont icon-swimming"></span>
-    <hr>
-    <span class="buttons-404">
-        
-            <a class="button " href="/">
-                <span class="iconfont icon-home"></span> 返回首页
-            </a>
-        
-    </span>
+        <!-- 文章页面 -->
+        <div id="article">
+            <div class="toc"></div>
+            <div class="article-body">
+                <h4 id="报错信息："><a href="#报错信息：" class="headerlink" title="报错信息："></a>报错信息：</h4><figure class="highlight handlebars"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br></pre></td><td class="code"><pre><span class="line"><span class="language-xml">VM1836:1 thirdScriptError</span></span><br><span class="line"><span class="language-xml">Cannot read property &#x27;emit&#x27; of undefined;at pages/board/board onReady function;at api navigateTo success callback function</span></span><br><span class="line"><span class="language-xml">TypeError: Cannot read property &#x27;emit&#x27; of undefined</span></span><br><span class="line"><span class="language-xml">    at Function.success (http://127.0.0.1:17382/appservice/pages/board/board.js:32:26)</span></span><br><span class="line"><span class="language-xml">    at Object.success (http://127.0.0.1:17382/appservice/__dev__/WAService.js:3:14159)</span></span><br><span class="line"><span class="language-xml">    at u (http://127.0.0.1:17382/appservice/__dev__/WAService.js:4:6009)</span></span><br><span class="line"><span class="language-xml">    at http://127.0.0.1:17382/appservice/__dev__/WAService.js:4:6192</span></span><br><span class="line"><span class="language-xml">    at n.<span class="tag">&lt;<span class="name">anonymous</span>&gt;</span> (http://127.0.0.1:17382/appservice/__dev__/asdebug.js:1:10293)</span></span><br><span class="line"><span class="language-xml">    at http://127.0.0.1:17382/appservice/__dev__/WAService.js:3:14159</span></span><br><span class="line"><span class="language-xml">    at http://127.0.0.1:17382/appservice/__dev__/WAService.js:8:25162</span></span><br><span class="line"><span class="language-xml">console.error @ VM1836:1</span></span><br><span class="line"><span class="language-xml">errorReport @ VM1843 WAService.js:3</span></span><br><span class="line"><span class="language-xml">thirdErrorReport @ VM1843 WAService.js:3</span></span><br><span class="line"><span class="language-xml">(anonymous) @ VM1843 WAService.js:3</span></span><br><span class="line"><span class="language-xml">u @ VM1843 WAService.js:4</span></span><br><span class="line"><span class="language-xml">(anonymous) @ VM1843 WAService.js:4</span></span><br><span class="line"><span class="language-xml">(anonymous) @ VM1840 asdebug.js:1</span></span><br><span class="line"><span class="language-xml">(anonymous) @ VM1843 WAService.js:3</span></span><br><span class="line"><span class="language-xml">(anonymous) @ VM1843 WAService.js:8</span></span><br><span class="line"><span class="language-xml">setTimeout (async)</span></span><br><span class="line"><span class="language-xml">setTimeout @ VM1843 WAService.js:8</span></span><br><span class="line"><span class="language-xml">(anonymous) @ VM1840 asdebug.js:1</span></span><br><span class="line"><span class="language-xml">(anonymous) @ VM1840 asdebug.js:1</span></span><br><span class="line"><span class="language-xml">(anonymous) @ VM1840 asdebug.js:1</span></span><br><span class="line"><span class="language-xml">_ws.onmessage @ VM1840 asdebug.js:1</span></span><br><span class="line"><span class="language-xml">VM1836:1 thirdScriptError</span></span><br><span class="line"><span class="language-xml">this.getOpenerEventChannel is not a function;at &quot;pages/detail/detail&quot; page lifeCycleMethod onLoad function</span></span><br><span class="line"><span class="language-xml">TypeError: this.getOpenerEventChannel is not a function</span></span><br><span class="line"><span class="language-xml">    at r.onLoad (http://127.0.0.1:17382/appservice/pages/detail/detail.js:17:29)</span></span><br><span class="line"><span class="language-xml">    at r.<span class="tag">&lt;<span class="name">anonymous</span>&gt;</span> (http://127.0.0.1:17382/appservice/__dev__/WAService.js:18:24831)</span></span><br><span class="line"><span class="language-xml">    at D (http://127.0.0.1:17382/appservice/__dev__/WAService.js:18:1254)</span></span><br><span class="line"><span class="language-xml">    at F (http://127.0.0.1:17382/appservice/__dev__/WAService.js:18:2027)</span></span><br><span class="line"><span class="language-xml">    at K (http://127.0.0.1:17382/appservice/__dev__/WAService.js:18:3339)</span></span><br><span class="line"><span class="language-xml">    at Function.<span class="tag">&lt;<span class="name">anonymous</span>&gt;</span> (http://127.0.0.1:17382/appservice/__dev__/WAService.js:18:6274)</span></span><br><span class="line"><span class="language-xml">    at http://127.0.0.1:17382/appservice/__dev__/WAService.js:18:12486</span></span><br><span class="line"><span class="language-xml">    at http://127.0.0.1:17382/appservice/__dev__/WAService.js:5:22695</span></span><br><span class="line"><span class="language-xml">    at Array.forEach (<span class="tag">&lt;<span class="name">anonymous</span>&gt;</span>)</span></span><br><span class="line"><span class="language-xml">    at Function.<span class="tag">&lt;<span class="name">anonymous</span>&gt;</span> (http://127.0.0.1:17382/appservice/__dev__/WAService.js:5:22675)</span></span><br><span class="line"><span class="language-xml">console.error @ VM1836:1</span></span><br><span class="line"><span class="language-xml">errorReport @ VM1843 WAService.js:3</span></span><br><span class="line"><span class="language-xml">thirdErrorReport @ VM1843 WAService.js:3</span></span><br><span class="line"><span class="language-xml">(anonymous) @ VM1843 WAService.js:3</span></span><br><span class="line"><span class="language-xml">(anonymous) @ VM1843 WAService.js:18</span></span><br><span class="line"><span class="language-xml">D @ VM1843 WAService.js:18</span></span><br><span class="line"><span class="language-xml">F @ VM1843 WAService.js:18</span></span><br><span class="line"><span class="language-xml">K @ VM1843 WAService.js:18</span></span><br><span class="line"><span class="language-xml">(anonymous) @ VM1843 WAService.js:18</span></span><br><span class="line"><span class="language-xml">(anonymous) @ VM1843 WAService.js:18</span></span><br><span class="line"><span class="language-xml">(anonymous) @ VM1843 WAService.js:5</span></span><br><span class="line"><span class="language-xml">(anonymous) @ VM1843 WAService.js:5</span></span><br><span class="line"><span class="language-xml">(anonymous) @ VM1843 WAService.js:4</span></span><br><span class="line"><span class="language-xml">o @ VM1840 asdebug.js:1</span></span><br><span class="line"><span class="language-xml">(anonymous) @ VM1840 asdebug.js:1</span></span><br><span class="line"><span class="language-xml">(anonymous) @ VM1840 asdebug.js:1</span></span><br><span class="line"><span class="language-xml">_ws.onmessage @ VM1840 asdebug.js:1</span></span><br></pre></td></tr></table></figure>
+<h4 id="解决：把本地设置里的调试库调高！！！"><a href="#解决：把本地设置里的调试库调高！！！" class="headerlink" title="解决：把本地设置里的调试库调高！！！"></a>解决：把本地设置里的调试库调高！！！</h4><p><img src="/posts/399976084/20200630114436485.jpg" alt="调试库"></p>
+
+                
+                <p class="end">__END__</p>
+            </div>
+            <div class="article-footer">
+                <div class="suffix-box">
+    <div class="suffix-box-left">
+        <img src="/image/sidebar/avatar.jpg" alt="Peter Teng">
+    </div>
+    <div class="suffix-box-right">
+        <span class="suffix-box-title">文章作者：</span>Peter Teng
+        <br>
+        <span class="suffix-box-title">文章出处：</span><a href="/posts/399976084.html" target="_blank">微信小程序页面间事件通信错误Cannot read property emit of undefined</a>
+        <br>
+        <span class="suffix-box-title">作者签名：</span>简单地活着, 肆意又精彩.
+        <br>
+        <span class="suffix-box-title">关于主题：</span><a href="https://github.com/first19326/Hexo-LiveForCode" target="_blank">Hexo - Live For Code</a>
+        <br>
+        <span class="suffix-box-title">版权声明：</span>文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" title="BY-NC-SA" target="_blank">BY-NC-SA</a> 许可协议，转载请注明出处
+        <br>
+    </div>
+    <div style="clear: both;"></div>
 </div>
+                
+                
+                    <div class="tag">
+                        标签：
+                        
+                            <a href="/tag/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/">微信小程序</a>
+                        
+                    </div>
+                
+                <div class="article-prev-next">
+                    
+                        <a href="/posts/1297471716.html" class="prev-prefix">« </a> 上一篇：    <a href="/posts/1297471716.html" title="发布于 2020-06-30 04:00">css超出显示省略号</a>
+                        <br>
                     
                     
+                        <a href="/posts/3855898246.html" class="next-prefix">» </a> 下一篇：    <a href="/posts/3855898246.html" title="发布于 2020-05-01 04:00">jQuery封装ajax的方法</a>
                     
                 </div>
-                 
+            </div>
+            
+    <div class="article-comments">
+        
+            <div class="comments-title">
+                评论列表
             </div>
         
+        <div class="comments-content"></div>
+    </div>
+    
+ 
+        </div>
     
 </div>
     <div id="footer">
