@@ -1,7 +1,9 @@
 ---
 title: db.collection.get()获取不到数据---微信小程序云开发
-date: 2020-07-02 15:29:07
+type: article
 tags: 微信小程序
+abbrlink: 2126508159
+date: 2020-07-02 15:29:07
 ---
 
 #### 代码：

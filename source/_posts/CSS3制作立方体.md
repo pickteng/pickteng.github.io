@@ -1,7 +1,9 @@
-﻿---
+---
 title: css3立方体
-date: 2020-02-22
+type: article
 tag: CSS
+abbrlink: 1079723623
+date: 2020-02-22 00:00:00
 ---
 
 # 用到的属性

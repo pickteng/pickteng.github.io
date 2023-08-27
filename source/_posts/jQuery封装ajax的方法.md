@@ -1,7 +1,9 @@
-﻿---
+---
 title: jQuery封装ajax的方法
-date: 2020-05-02
+type: article
 tag: jQuery
+abbrlink: 3855898246
+date: 2020-05-02 00:00:00
 ---
 
 # 1、$.get()

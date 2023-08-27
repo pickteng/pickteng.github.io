@@ -1,7 +1,9 @@
-﻿---
+---
 title: 微信小程序页面间事件通信错误Cannot read property emit of undefined
-date: 2020-06-30
+type: article
 tag: 微信小程序
+abbrlink: 399976084
+date: 2020-06-30 00:00:00
 ---
 
 

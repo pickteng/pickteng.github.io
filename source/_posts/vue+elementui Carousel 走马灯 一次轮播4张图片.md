@@ -1,7 +1,9 @@
-﻿---
+---
 title: vue+elementui Carousel 走马灯 一次轮播4张图片
-date: 2021-08-19
-tag: Element UI
+tag: Element
+type: article
+abbrlink: 2360078537
+date: 2021-08-19 00:00:00
 ---
 
 ## vue

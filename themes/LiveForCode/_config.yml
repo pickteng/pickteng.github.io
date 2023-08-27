@@ -7,13 +7,13 @@ GitHubRepositories: "Hexo-LiveForCode"
 
 # ---- 基础信息配置 ----
 # 博主名称, 文章后缀和主页图片上都会使用此名称
-User: "Pike Teng"
+User: "Peter Teng"
 # 用户头像URL
 UserAvatar: "/image/sidebar/avatar.jpg"
 # 创建时间
 WebsiteStartDate: "2020-01-01"
 # 个人主页URL
-Home: "https://worstone.cn"
+Home: "https://pickteng.github.io/"
 
 
 # ---- 网站配置 ----

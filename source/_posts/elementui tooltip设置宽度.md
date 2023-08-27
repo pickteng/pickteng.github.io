@@ -1,7 +1,9 @@
 ---
 title: element-ui tooltip手动设置宽度
-date: 2021-07-29
+type: article
 tag: Element UI
+abbrlink: 2736856151
+date: 2021-07-29 00:00:00
 ---
 
 ```

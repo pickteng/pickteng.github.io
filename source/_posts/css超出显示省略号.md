@@ -1,7 +1,9 @@
 ---
 title: css超出显示省略号
-date: 2020-07-01
+type: article
 tag: CSS
+abbrlink: 1297471716
+date: 2020-07-01 00:00:00
 ---
 
 ```

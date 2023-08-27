@@ -1,7 +1,9 @@
-﻿---
+---
 title: element-ui 表单验证
-date: 2020-10-17
+type: article
 tag: Element UI
+abbrlink: 1103307926
+date: 2020-10-17 00:00:00
 ---
 
 ## element-ui 表单验证
