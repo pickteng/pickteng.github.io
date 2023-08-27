@@ -7,7 +7,7 @@ GitHubRepositories: "Hexo-LiveForCode"
 
 # ---- 基础信息配置 ----
 # 博主名称, 文章后缀和主页图片上都会使用此名称
-User: "Peter Teng"
+User: "Pike Teng"
 # 用户头像URL
 UserAvatar: "/image/sidebar/avatar.jpg"
 # 创建时间
@@ -175,6 +175,13 @@ MenuList:
     class: ""
     target: "_self"
   -
+    name: "订阅"
+    icon: "icon-rss"
+    href: "/atom.xml"
+    type: ""
+    class: ""
+    target: "_blank"
+  -
     name: "搜索"
     icon: "icon-search-menu"
     href: "javascript:;"
@@ -200,14 +207,14 @@ MenuLink:
   -
     name: "知乎"
     icon: "icon-zhihu"
-    href: "https://zhihu.com/people/worstone-29"
+    href: "https://www.zhihu.com/people/17852841326"
     class: ""
     target: "_blank"
     image: ""
   -
     name: "微博"
     icon: "icon-weibo"
-    href: "https://weibo.com/u/5749847477"
+    href: "https://weibo.com/u/6121708676"
     class: ""
     target: "_blank"
     image: ""
@@ -222,13 +229,13 @@ MenuLink:
     name: "微信"
     icon: "icon-wechat"
     href: "javascript:;"
-    class: ""
+    class: "image"
     target: "_self"
-    image: ""
+    image: "/image/sidebar/wx.png"
   -
     name: "GitHub"
     icon: "icon-github"
-    href: "https://github.com/first19326"
+    href: "https://github.com/pickteng"
     class: ""
     target: "_blank"
     image: ""
@@ -268,9 +275,9 @@ Donate:
 
 # ---- Algolia配置 ----
 Search:
-  applicationID: "010C3EANT8"
-  apiKey: "c7abab9f11b79102b9aff7fe6d41447d"
-  indexName: "Notes"
+  applicationID: "7A3DP0CYW1"
+  apiKey: "6a1c10466760dc14c7a2df61ec3e4ac1"
+  indexName: "hexo"
   hits:
     page: 10
   labels:
@@ -288,10 +295,10 @@ Comment:
 # ---- Valine配置 ----
 Valine: 
   el: ".comments-content"
-  appId: "srhKtvWPQTWYKh3qX8G8M7v0-gzGzoHsz"
-  appKey: "8uVSP1q6UlALVC5igYfIfv2h"
+  appId: "hIR03YLe8AATTYMNzbaDdrvC-gzGzoHsz"
+  appKey: "rYoEcWsOC4tlqagrKSkhAJMi"
   # 必须设置, 国内版本需域名备案
-  serverURLs: 
+  serverURLs: https://hir03yle.lc-cn-n1-shared.com
   placeholder: "你是我一生只会遇见一次的惊喜..."
   avatar: "mm"
   meta: "nick,mail,link"
@@ -446,7 +453,7 @@ Font:
 
 # ---- 文章尾缀配置 ----
 Suffix: 
-  about: "简单地活着, 肆意又精彩."
+  about: "人生有梦, 各自精彩."
 
 
 # ---- 主题信息配置 ----

@@ -13,7 +13,7 @@ timezone: ''
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://example.com
+url: https://pickteng.github.io/
 # permalink: :year/:month/:day/:title/
 permalink: posts/:abbrlink.html
 permalink_defaults:
@@ -114,3 +114,15 @@ deploy:
   type: 'git'
   repo: https://github.com/pickteng/pickteng.github.io
   branch: gh-pages
+
+# Algolia搜索
+algolia:
+  applicationID: '7A3DP0CYW1'
+  apiKey: '6a1c10466760dc14c7a2df61ec3e4ac1'
+  indexName: 'hexo'
+
+# RSS订阅
+feed:
+  type: atom
+  path: atom.xml
+  limit: 10
